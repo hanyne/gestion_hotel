@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="gestion_hotelModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Chambres_">
+    <Key>
+      <PropertyRef Name="ID_Chambre_" />
+    </Key>
+    <Property Name="ID_Chambre_" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeChambre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PrixNuit" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="Disponibilite" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="clients">
+    <Key>
+      <PropertyRef Name="ID_Client_" />
+    </Key>
+    <Property Name="ID_Client_" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Prenom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Adresse" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NumeroTel" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Factures">
+    <Key>
+      <PropertyRef Name="ID_Facture" />
+    </Key>
+    <Property Name="ID_Facture" Type="Int32" Nullable="false" />
+    <Property Name="ID_Reservation" Type="Int32" />
+    <Property Name="MontantTotal" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="DateFacturation" Type="DateTime" Precision="0" />
+    <Property Name="StatutPaiement" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Utilisateur_">
+    <Key>
+      <PropertyRef Name="ID_Employe" />
+    </Key>
+    <Property Name="ID_Employe" Type="Int32" Nullable="false" />
+    <Property Name="NomUtilisateur" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Mot_De_Passe" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="DbHotel" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Chambres_" EntityType="Self.Chambres_" />
+    <EntitySet Name="clients" EntityType="Self.clients" />
+    <EntitySet Name="Factures" EntityType="Self.Factures" />
+    <EntitySet Name="Utilisateur_" EntityType="Self.Utilisateur_" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="gestion_hotelModelStoreContainer" CdmEntityContainer="DbHotel">
+    <EntitySetMapping Name="Chambres_">
+      <EntityTypeMapping TypeName="gestion_hotelModel.Chambres_">
+        <MappingFragment StoreEntitySet="Chambres ">
+          <ScalarProperty Name="ID_Chambre_" ColumnName="ID_Chambre " />
+          <ScalarProperty Name="TypeChambre" ColumnName="TypeChambre" />
+          <ScalarProperty Name="PrixNuit" ColumnName="PrixNuit" />
+          <ScalarProperty Name="Disponibilite" ColumnName="Disponibilite" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clients">
+      <EntityTypeMapping TypeName="gestion_hotelModel.clients">
+        <MappingFragment StoreEntitySet="clients">
+          <ScalarProperty Name="ID_Client_" ColumnName="ID_Client " />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="Adresse" ColumnName="Adresse" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="NumeroTel" ColumnName="NumeroTel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Factures">
+      <EntityTypeMapping TypeName="gestion_hotelModel.Factures">
+        <MappingFragment StoreEntitySet="Factures">
+          <ScalarProperty Name="ID_Facture" ColumnName="ID_Facture" />
+          <ScalarProperty Name="ID_Reservation" ColumnName="ID_Reservation" />
+          <ScalarProperty Name="MontantTotal" ColumnName="MontantTotal" />
+          <ScalarProperty Name="DateFacturation" ColumnName="DateFacturation" />
+          <ScalarProperty Name="StatutPaiement" ColumnName="StatutPaiement" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Utilisateur_">
+      <EntityTypeMapping TypeName="gestion_hotelModel.Utilisateur_">
+        <MappingFragment StoreEntitySet="Utilisateur ">
+          <ScalarProperty Name="ID_Employe" ColumnName="ID_Employe" />
+          <ScalarProperty Name="NomUtilisateur" ColumnName="NomUtilisateur" />
+          <ScalarProperty Name="Mot_De_Passe" ColumnName="Mot_De_Passe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
