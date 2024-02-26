@@ -13,7 +13,7 @@ namespace gestion_hotel
 {
     public partial class chambre : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\eki\Desktop\projet c#\gestion_hotel\gestion_hotel.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\eki\Desktop\projet c#\gestion_hotel\gestion_hotel\gestion_hotel.mdf;Integrated Security=True");
         SqlCommand cm = new SqlCommand();
         SqlDataReader dr;
         public chambre()

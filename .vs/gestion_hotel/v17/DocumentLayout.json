@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\eki\\Desktop\\projet c#\\gestion_hotel\\gestion_hotel\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EB2573C1-87A3-4C71-AE44-487061E22018}|gestion_hotel.csproj|c:\\users\\eki\\desktop\\projet c#\\gestion_hotel\\gestion_hotel\\model2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB2573C1-87A3-4C71-AE44-487061E22018}|gestion_hotel.csproj|solutionrelative:model2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB2573C1-87A3-4C71-AE44-487061E22018}|gestion_hotel.csproj|c:\\users\\eki\\desktop\\projet c#\\gestion_hotel\\gestion_hotel\\dbhotel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{EB2573C1-87A3-4C71-AE44-487061E22018}|gestion_hotel.csproj|solutionrelative:dbhotel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Model2.cs",
+              "DocumentMoniker": "C:\\Users\\eki\\Desktop\\projet c#\\gestion_hotel\\gestion_hotel\\Model2.cs",
+              "RelativeDocumentMoniker": "Model2.cs",
+              "ToolTip": "C:\\Users\\eki\\Desktop\\projet c#\\gestion_hotel\\gestion_hotel\\Model2.cs",
+              "RelativeToolTip": "Model2.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAAA8AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T16:25:51.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DbHotel.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\eki\\Desktop\\projet c#\\gestion_hotel\\gestion_hotel\\DbHotel.edmx",
+              "RelativeDocumentMoniker": "DbHotel.edmx",
+              "ToolTip": "C:\\Users\\eki\\Desktop\\projet c#\\gestion_hotel\\gestion_hotel\\DbHotel.edmx [Diagram1]",
+              "RelativeToolTip": "DbHotel.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-02-18T16:25:20.646Z",
+              "EditorCaption": " [Diagram1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

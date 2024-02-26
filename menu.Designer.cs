@@ -32,12 +32,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pnlafficher = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.btnclient = new System.Windows.Forms.Button();
-            this.btnemploye = new System.Windows.Forms.Button();
             this.btnreservation = new System.Windows.Forms.Button();
             this.btnfacture = new System.Windows.Forms.Button();
             this.btnchambre = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
@@ -71,6 +70,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(679, 628);
             this.panel3.TabIndex = 5;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // pnlafficher
             // 
@@ -84,6 +84,19 @@
             this.pnlafficher.Size = new System.Drawing.Size(758, 584);
             this.pnlafficher.TabIndex = 10;
             this.pnlafficher.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlafficher_Paint);
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(587, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(45, 33);
+            this.button2.TabIndex = 7;
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // btnclient
             // 
@@ -103,25 +116,6 @@
             this.btnclient.Text = "Clients";
             this.btnclient.UseVisualStyleBackColor = false;
             this.btnclient.Click += new System.EventHandler(this.btnclient_Click);
-            // 
-            // btnemploye
-            // 
-            this.btnemploye.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnemploye.FlatAppearance.BorderSize = 0;
-            this.btnemploye.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.btnemploye.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnemploye.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnemploye.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnemploye.Image = ((System.Drawing.Image)(resources.GetObject("btnemploye.Image")));
-            this.btnemploye.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnemploye.Location = new System.Drawing.Point(0, 379);
-            this.btnemploye.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnemploye.Name = "btnemploye";
-            this.btnemploye.Size = new System.Drawing.Size(325, 62);
-            this.btnemploye.TabIndex = 8;
-            this.btnemploye.Text = "Employé";
-            this.btnemploye.UseVisualStyleBackColor = false;
-            this.btnemploye.Click += new System.EventHandler(this.btnemploye_Click);
             // 
             // btnreservation
             // 
@@ -171,7 +165,7 @@
             this.btnchambre.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnchambre.Image = ((System.Drawing.Image)(resources.GetObject("btnchambre.Image")));
             this.btnchambre.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnchambre.Location = new System.Drawing.Point(0, 461);
+            this.btnchambre.Location = new System.Drawing.Point(0, 377);
             this.btnchambre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnchambre.Name = "btnchambre";
             this.btnchambre.Size = new System.Drawing.Size(325, 62);
@@ -179,19 +173,6 @@
             this.btnchambre.Text = "Chambres";
             this.btnchambre.UseVisualStyleBackColor = false;
             this.btnchambre.Click += new System.EventHandler(this.btnchambre_Click);
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(587, 2);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(45, 33);
-            this.button2.TabIndex = 7;
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -207,7 +188,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.btnchambre);
-            this.panel1.Controls.Add(this.btnemploye);
             this.panel1.Controls.Add(this.btnclient);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.btnreservation);
@@ -219,6 +199,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(329, 638);
             this.panel1.TabIndex = 3;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button3
             // 
@@ -256,7 +237,6 @@
         private System.Windows.Forms.Panel pnlafficher;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnemploye;
         private System.Windows.Forms.Button btnfacture;
         private System.Windows.Forms.Button btnchambre;
         private System.Windows.Forms.Button btnreservation;
